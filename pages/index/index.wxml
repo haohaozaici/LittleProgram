@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="inputUsername">
+    <input bindinput="bindKeyInput" placeholder="请输入学号" confirm-type="next" value="{{text1}}"/>
+  </view>
+  <view class="line"></view>
+  <view class="inputPassword">
+    <input bindinput="bindPasswordInput" placeholder="请输入密码" confirm-type="done" value="{{text2}}"/>
+  </view>
+  <view class="line2"></view>
+  <button class="button" bindtap="loadData">查询成绩</button>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
